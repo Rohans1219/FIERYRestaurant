@@ -9,7 +9,6 @@ import { Order } from '../models/order';
 })
 export class OrderService {
   
-  ord:any=[]
   private uRL="http://localhost:3000/orders";
 
   constructor(private  http:HttpClient) { }
@@ -18,7 +17,7 @@ export class OrderService {
    getOrders():Observable<Order[]>{
 
     return this.http.get<Order[]>(this.uRL)
-
+   }
 
       // this.ord= this.http.get<Order[]>(this.uRL).pipe(map(ordersdata=>ordersdata.map(order=> ({
       //   orderno: order.orderNo,
@@ -35,8 +34,4 @@ export class OrderService {
       //     quantity:items.quantity,
       //     price:items.price,
       //     itemvalue:items.itemValue
-
-    
-
-  }
 }

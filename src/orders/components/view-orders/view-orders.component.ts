@@ -6,6 +6,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 
+
 @Component({
   selector: 'app-view-orders',
   standalone: true,
@@ -25,8 +26,5 @@ orders:Order[]=[]
 
   getOrders():void{
     this.orderservice.getOrders().subscribe((orders)=>this.orders=orders)
-    console.log()
-
-    
   }
 }

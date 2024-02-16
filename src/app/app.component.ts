@@ -7,11 +7,13 @@ import { ViewOrderInfoComponent } from '../orders/components/view-order-info/vie
 import { ViewOrdersComponent } from '../orders/components/view-orders/view-orders.component';
 import { PlaceOrderComponent } from '../orders/components/place-order/place-order.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,HeaderComponent,FooterComponent,ViewOrderInfoComponent,ViewOrdersComponent,PlaceOrderComponent,HttpClientModule,ViewOrderInfoComponent],
+  imports: [CommonModule, RouterOutlet,HeaderComponent,FooterComponent,ViewOrderInfoComponent,ViewOrdersComponent,PlaceOrderComponent,HttpClientModule,ViewOrderInfoComponent,HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

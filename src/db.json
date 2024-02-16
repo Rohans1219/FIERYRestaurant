@@ -27,6 +27,34 @@
 
             }
             ]
+        },
+        {
+            "orderNo":2,
+            "contactName":"Naveen",
+            "orderDate":"2024-02-01",
+            "itemsOrdered":2,
+            "orderTotal":500,
+            "taxTotal":50,
+            "grandTotal":550,
+            "item": [{
+
+                "itemNo":1001,
+                "name":"PannerFry",
+                "quantity":2,
+                "price":70,
+                "itemValue":140
+               },
+            {
+
+                "itemNo":1562,
+                "name":"Biryani",
+                "quantity":1,
+                "price":360,
+                "itemValue":360
+                
+
+            }
+            ]
         }
     ]
     
